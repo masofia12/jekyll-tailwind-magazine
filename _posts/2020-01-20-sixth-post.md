@@ -6,6 +6,7 @@ author: James
 featured: true
 categories: [self care]
 featured_image: /uploads/travel/travel-2.jpg
+aspect-ratio: aspect-square
 seo: 
     title: 
     description: 

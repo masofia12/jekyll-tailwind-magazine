@@ -10,6 +10,7 @@ categories:
   - self care
   - food
 featured_image: /uploads/travel/travel-1.jpg
+aspect-ratio: aspect-[2/1]
 seo:
   title:
   description:

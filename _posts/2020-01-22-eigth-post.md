@@ -6,6 +6,7 @@ author: Tina
 featured: true
 categories: [life, self care]
 featured_image: /uploads/travel/travel-8.jpg
+aspect-ratio: aspect-square
 seo: 
     title: 
     description: 

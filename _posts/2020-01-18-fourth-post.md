@@ -6,6 +6,7 @@ author: Catherine
 featured: true
 categories: [life]
 featured_image: /uploads/travel/travel-3.jpg
+aspect-ratio: aspect-[1/2]
 seo: 
     title: 
     description: 

@@ -1,6 +1,13 @@
 ---
 layout: default
-title: Blog Page 
+title: Blog Page
+background-position: bg-center
+text-position: items-center
+banner-height: min-h-[60]
+text-color: text-white
+banner-image: /uploads/travel/travel-1.jpg
+heading: This is the blog page
+sub-heading: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 seo:
   title:
   description:
@@ -10,21 +17,18 @@ seo:
   hide-from-google: false
 ---
 
+<!-------------------------- Banner --------------------------------------------->
+
+{% include banner.html %}
+
 <!------------------------ Split blog loop (part 1) Copy ------------------------>
 <section class="p-5p">
 
-    <div class="capped-width grid sm:grid-cols-6">
+    <div class="capped-width columns-3">
 
 
         {% for post in site.posts limit:15 %}
-        <div class="
-        {%cycle
-        'md:col-span-2 bg-slate-200',
-        'md:col-span-2 bg-slate-300',
-        'md:col-span-2 bg-slate-400',
-        'md:col-span-3 bg-slate-100',
-        'md:col-span-3 bg-slate-200'
-        %}">
+        <div class="p-2">
 
             {% include post-loop-item-square.html %} </div>
 

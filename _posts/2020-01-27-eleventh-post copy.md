@@ -6,6 +6,7 @@ author: Catherine
 featured: true
 categories: [life, self care]
 featured_image: /uploads/travel/travel-8.jpg
+aspect-ratio: aspect-[2/1]
 seo: 
     title: 
     description: 

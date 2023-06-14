@@ -854,6 +854,10 @@ video {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.mx-5p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -909,6 +913,12 @@ video {
 .hidden {
   display: none;
 }
+.aspect-\[1\/2\] {
+  aspect-ratio: 1/2;
+}
+.aspect-\[2\/1\] {
+  aspect-ratio: 2/1;
+}
 .aspect-landscape {
   aspect-ratio: 3 / 2;
 }
@@ -945,6 +955,10 @@ video {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.columns-3 {
+  -moz-columns: 3;
+       columns: 3;
+}
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
@@ -970,6 +984,9 @@ video {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -982,36 +999,41 @@ video {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
-.whitespace-nowrap {
-  white-space: nowrap;
-}
 .border-2 {
   border-width: 2px;
 }
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+.border-b {
+  border-bottom-width: 1px;
 }
 .border-t-2 {
   border-top-width: 2px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-rose-600 {
   --tw-border-opacity: 1;
   border-color: rgb(225 29 72 / var(--tw-border-opacity));
 }
-.border-slate-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 .bg-dark {
   background-color: rgb(63 63 70);;
 }
-.bg-featured {
-  background-color: rgb(248 113 113);;
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
@@ -1028,38 +1050,6 @@ video {
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
-}
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -1127,6 +1117,10 @@ video {
 }
 .text-sm {
   font-size: 0.875rem;;
+  line-height: 1.2;
+}
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 .text-xs {
@@ -1209,11 +1203,6 @@ body {
   color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
-.hover\:text-rose-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(225 29 72 / var(--tw-text-opacity));
-}
-
 .group:hover .group-hover\:w-12 {
   width: 3rem;
 }
@@ -1235,27 +1224,15 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
   }
   .sm\:col-span-8 {
     grid-column: span 8 / span 8;
   }
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .sm\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1271,9 +1248,6 @@ body {
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .md\:flex-wrap {
     flex-wrap: wrap;

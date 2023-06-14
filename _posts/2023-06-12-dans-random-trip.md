@@ -10,6 +10,7 @@ categories:
   - travel
   - life
 featured_image: /uploads/travel/travel-1.jpg
+aspect-ratio: aspect-square
 page_blocks:
   - _id: banner
     title: Image Banner

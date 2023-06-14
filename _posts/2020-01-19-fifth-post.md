@@ -6,6 +6,7 @@ author: Tina
 featured: true
 categories: [travel]
 featured_image: /uploads/travel/travel-2.jpg
+aspect-ratio: aspect-[2/1]
 seo: 
     title: 
     description: 

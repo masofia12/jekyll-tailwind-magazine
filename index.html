@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Homepage
+background-position: bg-center
+text-position: items-center
+banner-height: min-h-[60]
+text-color: text-white
+banner-image: /uploads/travel/travel-2.jpg
+heading: A whole new world
+sub-heading: Surfing teaches you to apreciate the finer things in life, to be present, live in the moment and just breath.
 seo:
   title: 
   description:
@@ -10,8 +17,14 @@ seo:
   hide-from-google: false
 ---
 
+<!-------------------------- Banner --------------------------------------------->
+
+{% include banner.html %}
+
+
+
 <!-- {{site.data.site-settings.global-cta-options}} -->
-<!------------------------ Featured blog loop ------------------------>
+<!------------------------ Featured blog loop forced aspect ratio ------------------------>
 <section class="p-5p">
 
     <div class="max-w-screen-xl mx-auto md:columns-3">
@@ -21,7 +34,7 @@ seo:
 
         {% for post in featured_posts limit:12 %}
 
-            <a class="{% cycle 'bg-blue-400', 'bg-yellow-400', 'bg-green-400', %} post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
+            <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
                 <div class="bg-cover {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}"  
                 style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="p-4 relative -top-4 left-4 bg-white">
