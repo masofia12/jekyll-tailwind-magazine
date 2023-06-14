@@ -21,8 +21,8 @@ seo:
 
         {% for post in featured_posts limit:12 %}
 
-            <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
-                <div class="bg-cover {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}" 
+            <a class="{% cycle 'bg-blue-400', 'bg-yellow-400', 'bg-green-400', %} post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
+                <div class="bg-cover {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}"  
                 style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="p-4 relative -top-4 left-4 bg-white">
                     
