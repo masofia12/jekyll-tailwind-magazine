@@ -3,9 +3,11 @@ layout: default
 title: Homepage
 background-position: bg-center
 text-position: items-center
-banner-height: min-h-[60]
+banner-height: min-h-80
 text-color: text-white
-banner-image: /uploads/travel/travel-2.jpg
+banner-image: /uploads/travel/blog-21.png
+banner-image-alt: a pretty picture
+banner-style: cropped
 heading: A whole new world
 sub-heading: Surfing teaches you to apreciate the finer things in life, to be present, live in the moment and just breath.
 seo:
@@ -23,33 +25,49 @@ seo:
 
 <!-------------------------- Featured About --------------------------------------------->
 
-<section class="grid grid-cols-6 bg-gray-200">
+<section class="grid grid-cols-6 bg-light">
     <div class="col-span-3 py-10p pl-10p">
     <div class="aspect-[4/5] relative">
-        <img src="/uploads/travel/travel-7.jpg" class="object-cover object-center absolute inset-0 h-full w-full editable" alt="about the company">
+        <img src="/uploads/travel/blog-22.png" class="object-cover object-center absolute inset-0 h-full w-full editable" alt="about the company">
     </div>
     </div>
     <div class="col-span-3 self-center p-10p">
-        <div class="bg-gray-400 relative right-[25vw] p-4"><h2 class="text-center text-4xl">A facinating <br>heading about <br>the site.</h2></div>
-        <p class="py-10p pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas facere ab fugiat ipsa nulla, eius fugit dolorem impedit repellat quo iusto quis optio quasi ducimus nam necessitatibus velit? Necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptas exercitationem nam cupiditate pariatur nobis quam ex dolores provident vero qui eius rem quas eligendi optio, non aperiam! Rerum.</p>
-        <div class="mt-2 mb-14"><a class="border-b border-black uppercase" href="/about.html">Read more</a></div>
+        <div class="bg-feature relative right-[25vw] p-4"><h2 class="font-serif text-center text-6xl">A facinating <br>heading about <br>the site.</h2></div>
+        <p class="font-sans py-10p pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas facere ab fugiat ipsa nulla, eius fugit dolorem impedit repellat quo iusto quis optio quasi ducimus nam necessitatibus velit? Necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptas exercitationem nam cupiditate pariatur nobis quam ex dolores provident vero qui eius rem quas eligendi optio, non aperiam! Rerum.</p>
+        <div class="mt-2 mb-14"><a class="font-sans border-b border-black uppercase text-xl" href="/about.html">Read more</a></div>
     </div>
 </section>
 
+<!-------------------------- Upcoming travel destinations --------------------------------------------->
 
-<!-- {{site.data.site-settings.global-cta-options}} -->
+<section class="grid grid-cols-5">
+    <div class="bg-feature relative p-4 self-center uppercase font-serif text-center text-6xl"><h2>Upcoming travel destinations</h2></div>
+    <div class="col-span-3 self-center p-10p relative">
+        
+        <p class="font-sans py-10p pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas facere ab fugiat ipsa nulla, eius fugit dolorem impedit repellat quo iusto quis optio quasi ducimus nam necessitatibus velit? Necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptas exercitationem nam cupiditate pariatur nobis quam ex dolores provident vero qui eius rem quas eligendi optio, non aperiam! Rerum.</p>
+        <div class="mt-2 mb-14"><a class="font-sans border-b border-black uppercase text-xl" href="/about.html">Read more</a></div>
+    </div>
+    <div class="col-span-2 py-10p pl-10p">
+        <div class="relative">
+            <img src="/uploads/travel/blog-22.png" class="object-cover object-center absolute inset-0 h-full w-full editable" alt="about the company">
+        </div>
+        </div>
+</section>
+
+
+{{site.data.site-settings.global-cta-options}}
 <!------------------------ Featured blog loop forced aspect ratio ------------------------>
-<!-- <section class="p-5p">
+<section class="p-5p">
 
     <div class="max-w-screen-xl mx-auto md:columns-3">
 
 
         {% assign featured_posts = site.posts | where: 'featured', true %}
 
-        {% for post in featured_posts limit:12 %}
+        {% for post in featured_posts limit:3 %}
 
             <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
-                <div class="bg-cover {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}"  
+                <div class="bg-cover {% cycle 'aspect-square', 'aspect-landscape', %}"  
                 style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="p-4 relative -top-4 left-4 bg-white">
                     
@@ -71,6 +89,6 @@ seo:
   
     </div>
  
-</section>  -->
+</section>
 
 
