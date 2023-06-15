@@ -1051,10 +1051,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(225 29 72 / var(--tw-border-opacity));
 }
-.border-y-indigo-500 {
+.border-t-black {
   --tw-border-opacity: 1;
-  border-top-color: rgb(99 102 241 / var(--tw-border-opacity));
-  border-bottom-color: rgb(99 102 241 / var(--tw-border-opacity));
+  border-top-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-dark {
   --tw-bg-opacity: 1;
@@ -1158,6 +1157,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;

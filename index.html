@@ -18,6 +18,15 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+destinations:
+  - location: Europe
+    date: 00 Month - 00 Month 2023
+  - location: Australia
+    date: 00 Month - 00 Month 2023
+  - location: North America
+    date: 00 Month - 00 Month 2023
+  - location: Europe
+    date: 00 Month - 00 Month 2023 
 ---
 
 <!-------------------------- Banner --------------------------------------------->
@@ -47,35 +56,34 @@ seo:
         <h2>Upcoming travel destinations</h2>
     </div>
    
-    <div class="grid grid-cols-5">
-        <div class="col-span-3 row-span-1 self-center relative border-y-indigo-500"></div>
+    <div class="grid grid-cols-5 p-5p">
+               
+        <div class="col-span-3 row-span-1 self-center p-5p relative">
+            {% for item in page.destinations limit: 4 %}
+    
+            <div class="flex justify-between border-t-black border-2">
+                <span class="">
+                    {{ item.location }}
+                </span>
+                    
+                <span class="text-right">
+                    {{ item.date }}
+                </span>
+            </div>
+    
+            {% endfor %}
+
+        </div>  
         
         <div class="col-span-2 row-span-6 py-10p pl-10p">
             <div>
                 <img src="/uploads/travel/blog-22.png" class="object-cover object-center inset-0 h-full w-full editable" alt="about the company">
+                <span>Currently in...</span>
             </div>
-
-        <div class="col-span-3 row-span-1 self-center p-5p relative border-y-indigo-500">
-            <p class="font-sans">Europe DATE</p>
         </div>
-
-        <div class="col-span-3 row-span-1 self-center p-5p relative">
-            <p class="font-sans">Asia DATE</p>
-        </div>
-
-        <div class="col-span-3 row-span-1 self-center p-5p relative">
-            <p class="font-sans">Oceania DATE</p>
-        </div>
-
-        <div class="col-span-3 row-span-1 self-center p-5p relative">
-            <p class="font-sans">South America DATE</p>
-        </div>
-
-        <div class="col-span-3 row-span-1 self-center relative border-y-indigo-500"></div>    
     
     </div>
 
-    </div>
 </section>
 
 
