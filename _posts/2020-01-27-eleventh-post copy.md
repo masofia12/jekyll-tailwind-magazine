@@ -4,7 +4,7 @@ title: My eleventh post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Catherine
 featured: true
-categories: [life, self care]
+categories: [life, food]
 featured_image: /uploads/travel/travel-8.jpg
 aspect-ratio: aspect-[2/1]
 seo: 

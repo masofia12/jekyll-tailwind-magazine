@@ -1,24 +1,24 @@
 ---
 layout: default
 ---
+<!-------------------------- Banner --------------------------------------------->
+
+{% include banner.html %}
 
 
-<section class="p-5 bg-zinc-50">
+<section class="p-5 bg-featured">
 
+        <div class="intro py-6 text-center margin-b-2 px-10p mx-auto flex justify-between items-center border-black border-b-2">
 
-        <div class="intro pt-6 p-4 text-center margin-b-2 max-w-screen-lg mx-auto">
-
-            {% for item in page.categories %}
-                <span class="text-sm uppercase tracking-wide p-1 text-zinc-600"> {{ item }}</span>
-            {% endfor %}
+            <p class="text-sm tracking-wide text-zinc-600"> by <span class="font-bold"> {{ page.author }}  </span> </p>
             
-            <h1 class="text-6xl font-serif mt-4 mb-8"> {{ page.title }} </h1>
+            <h1 class="text-4xl font-serif mt-4 mb-8 uppercase"> {{ page.title }} </h1>
             
-            <p class="text-sm uppercase tracking-wide text-zinc-600"> by <span class="font-bold"> {{ page.author }}  </span>| {{ page.date | date_to_string }} </p>
+            <p class="text-sm uppercase tracking-wide text-zinc-600"> {{ page.date | date_to_string }} </p>
          
         </div>
 
-        <div class="p-2 prose max-w-screen-lg mx-auto">
+        <div class="p-2 max-w-screen-lg mx-auto text-center">
 
             {{content}}
 

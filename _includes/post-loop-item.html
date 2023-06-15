@@ -1,14 +1,14 @@
 
 
 <a class="break-inside-avoid block mb-4" href="{{ post.url }}">
-    <div class="bg-cover  {% cycle 'aspect-square', 'aspect-landscape', 'aspect-square' %} relative">
+    <div class="bg-cover pb-[24vw] relative">
         <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
   </div>
     <div class="p-4 relative">
         
-        <h2 class="mt-1 font-serif text-3xl font-serif"> {{ post.title }} </h2>
-        <p class="my-4 font-serif text-xl font-sans"> {{ post.description }} </p>
-        <span class="mt-1 font-serif text-xl uppercase border-black border-b font-serif" href="{{ post.url }}">Read more</span>     
+        <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
+        <p class="my-4 text-xl font-sans line-clamp-3"> {{ post.description }} </p>
+        <span class="mt-1 font-serif text-xl uppercase border-black border-b" href="{{ post.url }}">Read more</span>     
 
     </div>
 </a>

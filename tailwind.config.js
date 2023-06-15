@@ -58,7 +58,7 @@ module.exports = {
       colors: {
         'dark': '#1E1E1E',
         'light': '#EDECEB',
-        'featured': 'rgb(248 113 113);',
+        'featured': '#d4d1cd',
       },
     },
   },

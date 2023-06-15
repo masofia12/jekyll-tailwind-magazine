@@ -4,7 +4,7 @@ title: My tenth post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Catherine
 featured: true
-categories: [life, self care]
+categories: [food, self care]
 featured_image: /uploads/travel/travel-7.jpg
 aspect-ratio: aspect-[1/2]
 seo: 
