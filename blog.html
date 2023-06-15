@@ -3,11 +3,14 @@ layout: default
 title: Blog Page
 background-position: bg-center
 text-position: items-center
-banner-height: min-h-[60]
+banner-height: min-h-80
 text-color: text-white
 banner-image: /uploads/travel/travel-1.jpg
-heading: This is the blog page
-sub-heading: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+banner-image-alt: a pretty picture
+banner-style: cropped
+heading: Exploring Sumbawa.
+sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
+banner_url: /posts/2020/eleventh-post-copy
 seo:
   title:
   description:
@@ -22,16 +25,18 @@ seo:
 {% include banner.html %}
 
 <!------------------------ Split blog loop (part 1) Copy ------------------------>
-<h2 class="uppercase text-center">Recently on the blog</h2>
+<h2 class="uppercase text-center px-5p pt-5p text-serif text-4xl">Recently on the blog.</h2>
+
 <section class="p-5p">
 
     <div class="capped-width columns-3">
 
 
-        {% for post in site.posts limit:15 %}
+        {% for post in site.posts limit: 15 %}
+
         <div class="p-2">
 
-            {% include post-loop-item-square.html %} </div>
+            {% include post-loop-item-mixed-images.html %} </div>
 
         {% endfor %}
 

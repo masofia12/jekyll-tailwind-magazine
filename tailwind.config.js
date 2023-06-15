@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+  /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './_includes/**/*.{html,js,md}',
@@ -7,7 +7,11 @@ module.exports = {
     './*.{html,js,md}'
   ],
   theme: {
-    fontSize: {
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif'],
+      serif: ['Italiana', 'serif'],
+    },
+    fontSize: { 
       xs: ['0.75rem', '1.2'],
       sm: ['0.875rem;', '1.2'],
       base: ['1rem', '1.2'],
@@ -21,10 +25,6 @@ module.exports = {
       '7xl': ['4.5rem', '1'],
       '8xl': ['6rem', '1'],
       '9xl': ['8rem', '1'],
-    },
-    fontFamily: {
-      sans: ['Figtree', 'sans-serif'],
-      serif: ['Playfair Display', 'serif'],
     },
     extend: {
       lineHeight: {
@@ -43,6 +43,9 @@ module.exports = {
       },
       aspectRatio: {
         '5/3': '5 / 3',
+        'landscape': '3 / 2 ',
+        'portrait': '3 / 4',
+        'portrait-tall': '3 / 5',  
       },
       minHeight:{
         '100': '100vh',
@@ -51,11 +54,6 @@ module.exports = {
         '70': '70vh',
         '60': '60vh',
         '50': '50vh',
-      },
-      aspectRatio: {
-        'landscape': '3 / 2',
-        'portrait-tall': '5/8',
-        'portrait': '4/5',
       },
       colors: {
         'dark': 'rgb(63 63 70);',
@@ -66,5 +64,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-  ],
+  ]
 }

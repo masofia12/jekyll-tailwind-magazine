@@ -22,7 +22,13 @@
     box-sizing: border-box;
     transition: color 0.5s, background-color 0.5s, width 0.5s;
 }
-  
+
+/* ----------- CUSTOM STYLES --------- */
+
+.button {
+    @apply border p-4 uppercase text-red-100;
+}
+
 img { max-width: 100%; height: auto; }
 
 section { position: relative; }
@@ -39,6 +45,7 @@ div {
 
 body {
     font-weight: 300;
+    background-color: #d4d1cd;
 }
 
 

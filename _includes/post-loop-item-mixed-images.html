@@ -1,0 +1,21 @@
+
+
+<a class="break-inside-avoid block mb-4" href="{{ post.url }}">
+    <div class="bg-cover {% cycle 'aspect-square', 'aspect-landscape', 'aspect-portrait' %} relative">
+        <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+    </div> 
+
+    <div class="p-4 relative bg-white">
+        
+        <h2 class="mt-1 font-serif text-3xl font-serif"> {{ post.title }} </h2>
+        <p class="mt-1 font-serif text-xl font-sans"> {{ post.description }} </p>
+        <span class="mt-1 font-serif text-xl uppercase border-black border-b font-serif" href="{{ post.url }}">Read more</span>
+        <p> 
+        {% for item in post.categories %}
+            <span class="tag mr-2 font-sans"> {{item}} </span>
+        {% endfor %}
+        </p>
+        
+
+    </div>
+</a>
