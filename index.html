@@ -48,27 +48,30 @@ seo:
     </div>
    
     <div class="grid grid-cols-5">
+        <div class="col-span-3 row-span-1 self-center relative border-y-indigo-500"></div>
         
-        <div class="col-span-3 self-center p-10p relative border-y-indigo-500">
-            <p class="font-sans py-10p pr-20">Europe DATE</p>
+        <div class="col-span-2 row-span-6 py-10p pl-10p">
+            <div>
+                <img src="/uploads/travel/blog-22.png" class="object-cover object-center inset-0 h-full w-full editable" alt="about the company">
+            </div>
+
+        <div class="col-span-3 row-span-1 self-center p-5p relative border-y-indigo-500">
+            <p class="font-sans">Europe DATE</p>
         </div>
 
-        <div class="col-span-3 self-center p-10p relative">
-            <p class="font-sans py-10p pr-20">Asia DATE</p>
+        <div class="col-span-3 row-span-1 self-center p-5p relative">
+            <p class="font-sans">Asia DATE</p>
         </div>
 
-        <div class="col-span-3 self-center p-10p relative">
-            <p class="font-sans py-10p pr-20">Oceania DATE</p>
+        <div class="col-span-3 row-span-1 self-center p-5p relative">
+            <p class="font-sans">Oceania DATE</p>
         </div>
 
-        <div class="col-span-3 self-center p-10p relative">
-            <p class="font-sans py-10p pr-20">South America DATE</p>
+        <div class="col-span-3 row-span-1 self-center p-5p relative">
+            <p class="font-sans">South America DATE</p>
         </div>
 
-    <div class="col-span-2 row-span-6 py-10p pl-10p">
-        <div class="relative">
-            <img src="/uploads/travel/blog-22.png" class="object-cover object-center absolute inset-0 h-full w-full editable" alt="about the company">
-        </div>
+        <div class="col-span-3 row-span-1 self-center relative border-y-indigo-500"></div>    
     
     </div>
 
@@ -78,38 +81,24 @@ seo:
 
 {{site.data.site-settings.global-cta-options}}
 <!------------------------ Featured blog loop forced aspect ratio ------------------------>
-<section class="p-5p">
+<h2 class="uppercase text-center px-5p pt-5p text-serif text-4xl">Recently on the blog...</h2>
+    
+    <section class="p-5p">
 
-    <div class="max-w-screen-xl mx-auto md:columns-3">
-
-
-        {% assign featured_posts = site.posts | where: 'featured', true %}
-
-        {% for post in featured_posts limit:3 %}
-
-            <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
-                <div class="bg-cover {% cycle 'aspect-square', 'aspect-landscape', %}"  
-                style="background-image:url( '{{ post.featured_image }}' );"></div>
-                <div class="p-4 relative -top-4 left-4 bg-white">
-                    
-                    <p class="uppercase text-zinc-600 text-xs tracking-wide">
-                    {% for item in post.categories %}
-                        <span class="tag mr-2"> {{item}} </span>
-                    {% endfor %}
-                    </p>
-                    <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
-                    <hr class="border-rose-600 w-10 border-t-2 mt-4 mb-2"> 
-                    <p class="uppercase text-zinc-600 text-xs tracking-wide"> 
-                        <span class="font-bold mr-1">{{ post.author }}</span> {{ post.date | date_to_string }} 
-                    </p>
-
-                </div>
-            </a>
-
-        {% endfor %}
-  
-    </div>
+        <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-7">
+    
+            {% assign featured_posts = site.posts | where: 'featured', true %}
+            {% for post in featured_posts limit: 3 %}
+    
+            <div class="{% cycle 'md:col-span-2', 'md:col-span-3', 'md:col-span-2' %}">
+    
+                {% include post-loop-item.html %} </div>
+    
+            {% endfor %}
+    
+        </div>
+    
+    </section>
  
-</section>
 
 
