@@ -7,15 +7,15 @@ layout: default
 
     <div class="p-4 col-span-12 sm:col-span-8 md:col-span-9 blog-content">
 
-        <div class="intro padded-1">
+        <div class="intro padded-1 p-4">
 
             {% for item in page.categories %}
-                <span class="tag"> {{ item }}</span>
+                <span class="tag uppercase font-sans "> {{ item }}</span>
             {% endfor %}
             
-            <h1> {{ page.title }} </h1>
+            <h1 class="text-6xl mt-4 mb-8 font-serif"> {{ page.title }} </h1>
             
-            <p class="post-info"> by {{ page.author }} | {{ page.date | date_to_string }} </p>
+            <p class="post-info uppercase font-sans"> by {{ page.author }} | {{ page.date | date_to_string }} </p>
          
         </div>
         <div class="p-4">
@@ -31,15 +31,15 @@ layout: default
     <!------------------ SIDEBAR  --------------------------------->
     <aside class="p-4 col-span-12 sm:col-span-4 md:col-span-3">
 
-        <div class="sidebar-item p-4">
+        <div class="sidebar-item bg-light p-6 m-4">
 
-            <h4> About me </h4>
+            <h4 class="uppercase font-serif text-xl tracking-wide mb-4"> About me </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore totam nesciunt blanditiis. Laboriosam accusantium officia illo autem placeat laborum vel eaque! Consequuntur nobis assumenda impedit accusamus earum molestiae velit accusantium.</p> 
 
         </div>
 
-        <div class="sidebar-item p-4">
-            <h4> Recent Posts </h4>
+        <div class="bg-light p-6 m-4 sidebar-item">
+            <h4 class="uppercase text-xl tracking-wide font-serif mb-4"> Recent Posts </h4>
 
             <nav class="recent-posts-nav"> 
                 {% for post in site.posts limit:8 %}
@@ -49,8 +49,8 @@ layout: default
 
         </div>
 
-        <div class="sidebar-item p-4">
-            <h4> Explore Categories </h4>
+        <div class="sidebar-item bg-light p-6 m-4">
+            <h4 class="uppercase text-xl tracking-wide font-serif mb-4"> Explore Categories </h4>
 
             <nav> 
                 {% for archive in site.archives limit:8 %}

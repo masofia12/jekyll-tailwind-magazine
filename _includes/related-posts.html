@@ -1,7 +1,7 @@
 <section class="bg-light p-5p related-posts">
   <div class="max-w-screen-xl mx-auto">
 
-    <h4 class="text-center font-serif text-2xl mb-4"> Related Posts </h4>
+    <h4 class="text-center font-serif text-4xl mb-4 uppercase tracking-widest"> Related Posts </h4>
     
     <div class="grid grid-cols-3 align-items-center">
     
@@ -14,16 +14,10 @@
 
           <a class="p-2 block mb-4" href="{{ post.url }}">
             <div class="bg-cover aspect-square" style="background-image:url( '{{ post.featured_image }}' );"></div>
-            <div class="p-4 relative bg-white">
-                
-                <p>
-                {% for item in post.categories %}
-                    <span class="tag mr-2"> {{item}} </span>
-                {% endfor %}
-                </p>
-                <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
-                <hr class="border-rose-600 w-10 border-t-2 mt-4 mb-2"> 
-                <p class="tag"> By <span class="font-bold mr-1">{{ post.author }}</span> {{ post.date | date_to_string }} </p>
+            <div class="p-10p relative bg-white">
+                <h2 class="my-1 font-sans uppercase text-2xl"> {{ post.title }} </h2>
+                <p class="line-clamp-2 tracking-wide my-4">{{ post.description }}</p>
+                <span class="mt-1 font-serif text-xl uppercase border-black border-b" href="{{ post.url }}">Read more</span>
 
             </div>
         </a>

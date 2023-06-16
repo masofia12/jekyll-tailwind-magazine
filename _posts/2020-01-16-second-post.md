@@ -30,14 +30,14 @@ seo:
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?</p>
 
-<img class="inline-block items-center" src="{{page.featured_image-1}}" alt="{{page.featured-image-1-alt}}">
+<img class="inline-block items-center py-5p" src="{{page.featured_image-1}}" alt="{{page.featured-image-1-alt}}">
 
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?</p>
+<p class="pb-5p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciLorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic.tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic.</p>
 
-<p class="font-serif text-6xl">"Sometimes you just <br>have to break a board to <br>see what it is capable of"</p>
+<p class="font-serif text-6xl py-5p">"Sometimes you just <br>have to break a board to <br>see what it is capable of"</p>
 
 
-<img class="inline-block items-center" src="{{page.featured_image-2}}" alt="{{page.featured-image-2-alt}}">
+<img class="inline-block items-center py-5p" src="{{page.featured_image-2}}" alt="{{page.featured-image-2-alt}}">
