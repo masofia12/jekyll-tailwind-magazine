@@ -1,6 +1,6 @@
 ---
 layout: product-presets
-title: Desert Glow
+title: Winter Snow
 subtitle: A short product subtitle
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore?
 product_url: www.google.com
@@ -8,7 +8,7 @@ featured: true
 featured-image: /uploads/travel/blog-7.png
 featured-image-alt: before and after product name preset
 product-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid.
-price: $25
+price: $18
 before-image: /uploads/travel/travel-3.jpg
 after-image: /uploads/travel/travel-4.jpg
 comparison-images:
@@ -35,7 +35,7 @@ faqs:
     description: Lorem ipsum dolor, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore?
 categories:
   - travel
-  - life
-price: $18
-slug: desert-glow
+  - self care
+price: $42
+slug: winter-snow
 ---
