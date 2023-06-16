@@ -1,0 +1,198 @@
+---
+layout: default
+---
+<!------------------------ Intro banner ----------------------->
+<section class="grid grid-cols-2">
+
+    <div class="pt-[35%] px-10p">
+        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-4">{{page.title}}</h2>
+        <h3 class="uppercase text-lg font-sans my-4">{{page.subtitle}}</h3>
+        <p class="font-sans my-4">{{page.description}}</p>
+        <a class="uppercase button mt-2 inline-block" href="{{page.product_url}}">Buy now</a>
+    </div>
+
+    <div class="relative">
+        <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+    </div>
+
+</section>
+
+<!-------------------------------------- Before and after ---------------------------------->
+
+<section class="p-5p">
+    <div class="grid grid-cols-3 max-w-screen-xl mx-auto">
+        <div class="col-span-2 p-8">
+
+            {% include before-and-after-slider.html %}
+
+        </div>
+        <div class="pt-[35%] px-10p">
+            <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6">Before & After</h2>
+            <p class="font-sans my-4">{{page.product-description}}</p>
+        </div>
+
+    </div>
+</section>
+<!-- <section class="grid grid-cols-3 p-5p">
+
+    <div class="col-span-2">
+        
+        <div class="relative aspect-landscape mb-2">
+            <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+        </div>
+        
+        <div class="grid grid-cols-6 gap-2">
+            
+            <div class="relative aspect-square">
+                <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+            </div>
+            <div class="relative aspect-square">
+                <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+            </div>
+            <div class="relative aspect-square">
+                <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+            </div>
+            <div class="relative aspect-square">
+                <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+            </div>
+            <div class="relative aspect-square"><img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}"></div>
+            <div class="relative aspect-square"><img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}"></div>
+
+        </div>
+    </div>
+
+    <div class="pt-[35%] px-10p">
+        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6">Before & After</h2>
+        <p class="font-sans my-4">{{page.product-description}}</p>
+    </div>
+
+</section> -->
+
+<!------------------------------------- Vidoe - how it works --------------------------->
+<section class="grid grid-cols-3 p-5p">
+
+    <div class="pt-[20%]">
+        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6 uppercase">How to use your presets</h2>
+        <ul class="font-sans my-4 list-disc list-inside">
+            <li>Magni facere tenetur veniam itaque</li>
+            <li>Lorem itaque tenetur?</li>
+            <li>Debitis soluta consequatur</li>
+            <li>Consectetur adipisicing consequatur</li>
+            <li>Amet beatae distinctio nostrum maiores!</li>
+            <li>Lorem magni facere tenetur veniam debitis</li>
+            <li>Debitis itaque tenetur?</li>
+            <li>Ipsum magni facere veniam debitis</li>
+            <li>Tempora magni facere tenetur veniam</li>
+        </ul>
+    </div>
+
+    <div class="col-span-2 mb-2">
+           
+        <div class="object-cover max-w-screen-xl mx-auto p-8">
+            
+            <div class="h-full w-full" style="background-image:url('{{page.featured-image}}');">
+                {% include video.html 
+                    vimeo-id=site.data.presets-settings.presets-instructions-vimeo-id %}
+            </div>
+        </div>
+    
+    </div>
+
+</section>
+
+<!-------------------------- FAQs --------------------------------------------->
+
+<section class="px-5p pb-5p">
+    
+    <h2 class="pb-8 bg-feature relative font-serif tracking-widest text-4xl my-6 uppercase">FAQ's</h2>
+   
+    <div>
+        <hr class="border-1 border-black">
+        {% for item in page.faqs %}
+        <div class="py-3 flex justify-between">
+        <h3 class="my-4 uppercase">{{ item.question }}</h3>
+        <i class="py-3 iconoir-nav-arrow-right"></i>
+        </div>
+        <div> <p class="mb-10">{{ item.description }}</p>
+        </div>
+        <hr class="border-1 border-black">    
+         {% endfor %} 
+    
+    </div>
+
+</section>
+
+
+<!------------------------ Related Products loop forced aspect ratio ------------------------>
+<section class="p-5p bg-light">
+    
+    <h2 class="uppercase text-center pb-5p font-serif  tracking-widest text-4xl">Related products</h2>
+    
+    <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
+
+        {% assign featured_posts = site.posts | where: 'featured', true %}
+        {% for post in featured_posts limit: 3 %}
+
+        <div>
+
+            {% include product-loop-item.html %} </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- <section class="p-8"> 
+	Product:  {{page.title}} 
+	Price: {{page.price }}
+	Before: <img src="{{page.before-image}}">
+	After: <img src="{{page.after-image}}">
+</section>  -->
+
+<!-- 
+
+Section - Intro Banner
+
+2 column section with text on the left and image on the right
+
+Variables with 
+h2 (product name)
+h3 (product subtitle)
+p (product description)
+hardcoded "buy now" with link (product url/javascript button)
+
+
+Section - Before and After 
+
+3 columns with first two image gallery on the left and text on the right
+
+gallery section - nested section 
+have each picture underneath with an array but make sure to make a comment for the client that they can only have 6
+
+h3 hardcoded
+p (product description)
+
+Section - How to use - hardcoded in datafile
+
+3 columns, first column text, second two columns will be video and background image as first up
+
+
+Section - FAQs - hardcoded in datafile (all preset things in one datafile)
+
+h3
+pull down
+
+
+Sectin - related products 
+
+Same as related posts 
+
+
+
+ -->

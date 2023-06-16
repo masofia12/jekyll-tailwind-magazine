@@ -1,0 +1,20 @@
+
+
+<a class="break-inside-avoid block mb-4" href="{{ post.url }}">
+    <div class="bg-cover pb-[24vw] relative">
+        <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+  </div>
+    <div class="p-4 relative">
+        <p>
+            {% for item in post.categories %}
+                <span class="tag bg-[#D9D9D9] uppercase mr-4 my-2 mb-4 p-1"> {{item}} </span>
+            {% endfor %}
+        </p>
+        <h2 class="my-4 font-sans text-2xl"> {{ post.title }} </h2>
+        <p class="my-4 text-m font-sans line-clamp-3"> {{ post.description }} </p>
+        <span class="font-serif text-xl uppercase">$32</span>     
+        
+
+    </div>
+</a>
+

@@ -26,7 +26,7 @@
 /* ----------- CUSTOM STYLES --------- */
 
 .button {
-    @apply border p-4 uppercase text-red-100;
+    @apply p-4 uppercase text-white bg-black tracking-widest;
 }
 
 img { max-width: 100%; height: auto; }
