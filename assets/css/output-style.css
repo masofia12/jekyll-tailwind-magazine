@@ -526,10 +526,6 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -1089,12 +1085,18 @@ body {
 }
 
 .members-content h2, .members-content p{
-margin-bottom: 10rem;
+margin-bottom: 2rem;
 }
 
 .members-content h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    font-family: 'Italiana', 'serif';
+    letter-spacing: 0.2rem;
+}
+
+.last\:border-b-0:last-child {
+  border-bottom-width: 0px;
 }
 
 .hover\:bg-zinc-100:hover {
