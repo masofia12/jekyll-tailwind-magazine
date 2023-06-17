@@ -1,21 +1,22 @@
 
 
-<a class="break-inside-avoid block mb-4" href="{{ post.url }}">
-    <div class="bg-cover pb-[24vw] relative">
-        <img src="{{ post.related-image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
-        {% if post.new == true %}
+<a class="break-inside-avoid block mb-4" href="{{ product.url }}">
+    <div class="aspect-square bg-[url('{{ product.hover-image }}')] bg-cover bg-center relative">
+        <img src="{{ product.related-image }}" alt="{{product.title}}" class="hover:opacity-0 transition-opacity absolute inset-0 w-full h-full object-cover object-center">
+    
+        {% if product.new == true %}
         <span class="uppercase bg-black px-4 py-2 text-white z-10 absolute right-2 top-2">New</span>
         {% endif %}
   </div>
     <div class="p-4 relative">
         <p>
-            {% for item in post.categories %}
+            {% for item in product.categories %}
                 <span class="tag bg-[#D9D9D9] uppercase mr-4 my-2 mb-4 p-1 px-2"> {{item}} </span>
             {% endfor %}
         </p>
-        <h2 class="my-4 font-sans text-2xl"> {{ post.title }} </h2>
-        <p class="mt-4 mb-2 text-m font-sans line-clamp-3"> {{ post.description }} </p>
-        <span class="font-serif text-xl uppercase">{{ post.price }}</span>     
+        <h2 class="my-4 font-sans text-2xl"> {{ product.title }} </h2>
+        <p class="mt-4 mb-2 text-m font-sans line-clamp-3"> {{ product.description }} </p>
+        <span class="font-serif text-xl uppercase">{{ product.price }}</span>     
         
 
     </div>

@@ -807,6 +807,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+.bg-\[url\(\'\/uploads\/travel\/blog-5\.png\'\)\] {
+  background-image: url('/uploads/travel/blog-5.png');
+}
+.bg-\[url\(\'\/uploads\/travel\/blog-26\.png\'\)\] {
+  background-image: url('/uploads/travel/blog-26.png');
+}
 .bg-\[length\:55vw\] {
   background-size: 55vw;
 }
@@ -921,9 +930,6 @@ video {
 }
 .pl-5p {
   padding-left: 5%;
-}
-.pl-\[50\%\] {
-  padding-left: 50%;
 }
 .pr-20 {
   padding-right: 5rem;
@@ -1044,6 +1050,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-700 {
   transition-duration: 700ms;
 }
@@ -1122,6 +1133,10 @@ margin-bottom: 2rem;
 .hover\:text-rose-500:hover {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
 }
 
 .group:hover .group-hover\:w-12 {

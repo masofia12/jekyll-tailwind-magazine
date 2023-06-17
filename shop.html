@@ -33,7 +33,7 @@ seo:
     <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
 
         {% assign featured_product-ebooks = site.products-guides | where: 'featured', true %}
-        {% for post in featured_product-ebooks limit: 3 %}
+        {% for product in featured_product-ebooks limit: 3 %}
 
         <div>
 
@@ -65,7 +65,7 @@ seo:
     <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
 
         {% assign featured_products-presets = site.products-presets | where: 'featured', true %}
-        {% for post in featured_products-presets limit: 3 %}
+        {% for product in featured_products-presets limit: 3 %}
 
         <div>
 

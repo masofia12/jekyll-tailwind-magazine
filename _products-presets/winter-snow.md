@@ -8,6 +8,7 @@ featured: true
 buy-button-id: 6132599521458
 featured-image: /uploads/travel/blog-7.png
 related-image: /uploads/travel/blog-7.png
+hover-image: /uploads/travel/blog-26.png
 featured-image-alt: before and after product name preset
 product-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid.
 price: $18
