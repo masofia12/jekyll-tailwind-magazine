@@ -1078,6 +1078,15 @@ body {
     background-color: #d4d1cd;
 }
 
+.members-content h2, .members-content p{
+margin-bottom: 10rem;
+}
+
+.members-content h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
 .hover\:bg-zinc-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -1161,5 +1170,3 @@ body {
 .\[\&\>\*\:last-child\]\:border-b-2>*:last-child {
   border-bottom-width: 2px;
 }
-
-
