@@ -502,9 +502,6 @@ video {
 .m-4 {
   margin: 1rem;
 }
-.m-5p {
-  margin: 5%;
-}
 .mx-5p {
   margin-left: 5%;
   margin-right: 5%;
@@ -738,6 +735,9 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.border {
+  border-width: 1px;
+}
 .border-2 {
   border-width: 2px;
 }
@@ -918,6 +918,9 @@ video {
 }
 .pr-20 {
   padding-right: 5rem;
+}
+.pt-15p {
+  padding-top: 15%;
 }
 .pt-4 {
   padding-top: 1rem;
