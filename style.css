@@ -48,4 +48,11 @@ body {
     background-color: #d4d1cd;
 }
 
+.members-content h2, .members-content p{
+margin-bottom: 10rem;
+}
 
+.members-content h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
