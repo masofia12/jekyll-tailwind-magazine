@@ -502,6 +502,9 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.m-5p {
+  margin: 5%;
+}
 .mx-5p {
   margin-left: 5%;
   margin-right: 5%;
