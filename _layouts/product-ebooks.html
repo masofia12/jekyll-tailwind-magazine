@@ -1,0 +1,98 @@
+---
+layout: default
+---
+<!------------------------ Intro banner ----------------------->
+<section class="grid grid-cols-2">
+
+    <div class="pt-[35%] px-10p">
+        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-4">{{page.title}}</h2>
+        <h3 class="uppercase text-lg font-sans my-4">{{page.subtitle}}</h3>
+        <p class="font-sans my-4">{{page.description}}</p>
+        <a class="uppercase button mt-2 inline-block" href="{{page.product_url}}">Buy now</a>
+    </div>
+
+    <div class="relative">
+        <img class="inset-0 h-full w-full object-cover absolute" src="{{page.featured-image}}" alt="{{page.featured-image-alt}}">
+    </div>
+
+</section>
+
+<!-------------------------------------- Before and after ---------------------------------->
+
+<section class="p-5p">
+    <div class="grid grid-cols-3 max-w-screen-xl mx-auto">
+        <div class="col-span-2 p-8">
+
+            {% include before-and-after-slider.html %}
+
+        </div>
+        <div class="pt-[35%] px-10p">
+            <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6">Before & After</h2>
+            <p class="font-sans my-4">{{page.product-description}}</p>
+        </div>
+
+    </div>
+</section>
+
+<!------------------------------------- Video - how it works --------------------------->
+<section class="grid grid-cols-3 p-5p">
+
+    <div class="pt-[20%]">
+        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6 uppercase">How to use your presets</h2>
+        <ul class="font-sans my-4 list-disc list-inside">
+            <li>Magni facere tenetur veniam itaque</li>
+            <li>Lorem itaque tenetur?</li>
+            <li>Debitis soluta consequatur</li>
+            <li>Consectetur adipisicing consequatur</li>
+            <li>Amet beatae distinctio nostrum maiores!</li>
+            <li>Lorem magni facere tenetur veniam debitis</li>
+            <li>Debitis itaque tenetur?</li>
+            <li>Ipsum magni facere veniam debitis</li>
+            <li>Tempora magni facere tenetur veniam</li>
+        </ul>
+    </div>
+
+    <div class="col-span-2 mb-2">
+           
+        <div class="object-cover max-w-screen-xl mx-auto p-8">
+            
+            <div class="h-full w-full" style="background-image:url('{{page.featured-image}}');">
+                {% include video.html 
+                    vimeo-id=site.data.presets-settings.presets-instructions-vimeo-id %}
+            </div>
+        </div>
+    
+    </div>
+
+</section>
+
+<!-------------------------- FAQs --------------------------------------------->
+
+<section class="p-5p">
+    <div class="max-w-screen-xl mx-auto">
+
+        {% include accordion.html  accordion-source=site.data.presets-settings.faqs %}
+
+    </div>
+</section>
+
+
+<!------------------------ Related Products loop forced aspect ratio ------------------------>
+<section class="p-5p bg-light">
+    
+    <h2 class="uppercase text-center pb-5p font-serif  tracking-widest text-4xl">Related products</h2>
+    
+    <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
+
+        {% assign featured_products-presets = site.products-presets | where: 'featured', true %}
+        {% for post in featured_products-presets limit: 3 %}
+
+        <div>
+
+            {% include product-loop-item.html %} </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

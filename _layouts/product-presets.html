@@ -102,7 +102,14 @@ layout: default
 
 <!-------------------------- FAQs --------------------------------------------->
 
-<section class="px-5p pb-5p">
+<section class="p-5p">
+    <div class="max-w-screen-xl mx-auto">
+
+        {% include accordion.html  accordion-source=site.data.presets-settings.faqs %}
+
+    </div>
+</section>
+<!-- <section class="px-5p pb-5p">
     
     <h2 class="pb-8 bg-feature relative font-serif tracking-widest text-4xl my-6 uppercase">FAQ's</h2>
    
@@ -120,7 +127,7 @@ layout: default
     
     </div>
 
-</section>
+</section> -->
 
 
 <!------------------------ Related Products loop forced aspect ratio ------------------------>
