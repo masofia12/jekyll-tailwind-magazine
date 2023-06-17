@@ -487,6 +487,9 @@ video {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -556,6 +559,9 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -579,6 +585,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.contents {
+  display: contents;
 }
 .hidden {
   display: none;
@@ -680,6 +689,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -887,6 +899,12 @@ video {
 }
 .pt-\[35\%\] {
   padding-top: 35%;
+}
+.pl-5p {
+  padding-left: 5%;
+}
+.pb-10p {
+  padding-bottom: 10%;
 }
 .text-center {
   text-align: center;

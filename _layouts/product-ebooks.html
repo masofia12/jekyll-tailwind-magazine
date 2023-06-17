@@ -17,9 +17,12 @@ layout: default
 
 </section>
 
-<!-------------------------------------- Before and after ---------------------------------->
 
-<section class="p-5p">
+{% comment %}
+<!-------------------------------------- What's inside ---------------------------------->
+
+<!--<section class="p-5p">
+    <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6">What's included</h2>
     <div class="grid grid-cols-3 max-w-screen-xl mx-auto">
         <div class="col-span-2 p-8">
 
@@ -32,48 +35,81 @@ layout: default
         </div>
 
     </div>
+</section>-->
+{% endcomment %}
+
+
+<section class="p-5p"> 
+<div class="max-w-screen-xl mx-auto">
+    <div>
+        <h2 class="bg-feature relative font-serif tracking-widest text-center uppercase text-4xl my-6">What's inside</h2>
+        <div class="relative aspect-landscape mb-2">
+            <img class="inset-0 h-full w-full object-cover absolute" src="{{page.gallery-images[0]}}" alt="{{page.featured-image-alt}}">
+        </div>
+        
+        <div class="grid grid-cols-6 gap-1">
+            {% for image in page.gallery-images %}
+            <div class="relative aspect-square">
+                <img class="inset-0 h-full w-full object-cover absolute" src="{{image}}" alt="pretty picture">
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
 </section>
 
-<!------------------------------------- Video - how it works --------------------------->
-<section class="grid grid-cols-3 p-5p">
+<!------------------------------------- contents + whats included --------------------------->
 
-    <div class="pt-[20%]">
-        <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-6 uppercase">How to use your presets</h2>
-        <ul class="font-sans my-4 list-disc list-inside">
-            <li>Magni facere tenetur veniam itaque</li>
-            <li>Lorem itaque tenetur?</li>
-            <li>Debitis soluta consequatur</li>
-            <li>Consectetur adipisicing consequatur</li>
-            <li>Amet beatae distinctio nostrum maiores!</li>
-            <li>Lorem magni facere tenetur veniam debitis</li>
-            <li>Debitis itaque tenetur?</li>
-            <li>Ipsum magni facere veniam debitis</li>
-            <li>Tempora magni facere tenetur veniam</li>
-        </ul>
-    </div>
-
-    <div class="col-span-2 mb-2">
-           
-        <div class="object-cover max-w-screen-xl mx-auto p-8">
+<section class="py-5p">
+    
+    
+   
+    <div class="grid grid-cols-5 px-5p items-center">
+        
+        <h2 class="col-span-3 block bg-feature relative px-5p self-center uppercase font-serif tracking-widest text-4xl">Table of contents</h2>
+    
+        <div class="col-span-2 pb-10p pl-10p row-span-2">
             
-            <div class="h-full w-full" style="background-image:url('{{page.featured-image}}');">
-                {% include video.html 
-                    vimeo-id=site.data.presets-settings.presets-instructions-vimeo-id %}
+            <h2 class="bg-feature relative font-serif tracking-widest text-4xl mb-6 uppercase">What's included</h2>
+            <ul class="font-sans my-4 list-disc list-inside">
+                <li>Magni facere tenetur veniam itaque</li>
+                <li>Lorem itaque tenetur?</li>
+                <li>Debitis soluta consequatur</li>
+                <li>Consectetur adipisicing consequatur</li>
+                <li>Amet beatae distinctio nostrum maiores!</li>
+                <li>Lorem magni facere tenetur veniam debitis</li>
+                <li>Debitis itaque tenetur?</li>
+                <li>Ipsum magni facere veniam debitis</li>
+                <li>Tempora magni facere tenetur veniam</li>
+            </ul>
+            <div class="flex items-center">
+                <a class="uppercase button mt-2 inline-block" href="{{page.product_url}}">Add to cart</a>
+                <span class="mt-2 inline-block pl-5p"> Add to wishlist </span>
+            
             </div>
         </div>
+
+        <div class="col-span-3 px-5p relative [&>*:last-child]:border-b-2">
+            
+                {% for item in page.destinations limit: 4 %}
+    
+                <div class="py-8 flex justify-between border-black border-t-2">
+                    <span class="">
+                        {{ item.location }}
+                    </span>
+                        
+                    <span class="text-right">
+                        {{ item.pages }}
+                    </span>
+                </div>
+        
+                {% endfor %}
+        
+        </div>  
     
     </div>
 
-</section>
-
-<!-------------------------- FAQs --------------------------------------------->
-
-<section class="p-5p">
-    <div class="max-w-screen-xl mx-auto">
-
-        {% include accordion.html  accordion-source=site.data.presets-settings.faqs %}
-
-    </div>
 </section>
 
 
@@ -84,8 +120,8 @@ layout: default
     
     <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
 
-        {% assign featured_products-presets = site.products-presets | where: 'featured', true %}
-        {% for post in featured_products-presets limit: 3 %}
+        {% assign featured_product-ebooks = site.products-guides | where: 'featured', true %}
+        {% for post in featured_product-ebooks limit: 3 %}
 
         <div>
 

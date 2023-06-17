@@ -21,6 +21,27 @@ layout: default
 	</div>
 	
 </section>
+
+<section class="p-8 max-w-screen-xl mx-auto">
+
+	<h2> Shop all presets </h2> 
+	
+	<div class="grid grid-cols-3 gap-4">
+	
+		{% for product in site.products-guides %}
+		
+		<a href="{{product.url}}"> 
+			<img src="{{product.after-image}}">
+			<h4> {{product.title}}</h4>
+			<p> {{product.price}}</p>
+        </a>
+	
+	
+	{% endfor %}
+	
+	</div>
+	
+</section>
 <!-- <section class="p-5p">
 
     <div class="max-w-screen-xl mx-auto">
