@@ -21,7 +21,7 @@ _options:
     styles: /editor.css
     blockquote: true
     horizontalrule: true
-    format: p h1 h2 h3 h4 h5 h6
+    format: p h1 h2 h3 h4 h5 h6 img
     bold: true
     italic: true
     numberedlist: true
@@ -29,7 +29,7 @@ _options:
     code: true
     table: true
     right: right
-    center: center
+    center: center 
     left: left
     embed: true
     link: true
