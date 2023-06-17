@@ -48,7 +48,7 @@ members-content:
     <div class="col-span-3">
 
         {% for item in page.members-content %}
-        <div id="{{item.title | slugify}}" class="p-5p border-b-2"> 
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black"> 
             {{ item.content_html }}
         </div>
 
