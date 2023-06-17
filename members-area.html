@@ -35,10 +35,10 @@ members-content:
         </div> 
     </section> 
 
-<section class="min-h-80 p-5p grid grid-cols-4">
+<section class="min-h-80 px-5p pb-5p grid grid-cols-4">
 
-    <div class="col-span-1 border-r-2 border-black">
-
+    <div class="col-span-1 mt-10p border-r-2 border-black">
+        <h2 class="block uppercase font-serif text-2xl my-4 tracking-widest">Explore</h2> 
             {% for item in page.members-content %}
             <a href="#{{item.title | slugify }}" class="block"> {{item.title}}</a>
             {% endfor %}
