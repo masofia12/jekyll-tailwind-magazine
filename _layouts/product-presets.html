@@ -8,7 +8,7 @@ layout: default
         <h2 class="bg-feature relative font-serif tracking-widest text-4xl my-4">{{page.title}}</h2>
         <h3 class="uppercase text-lg font-sans my-4">{{page.subtitle}}</h3>
         <p class="font-sans my-4">{{page.description}}</p>
-        <a class="uppercase button mt-2 inline-block" href="{{page.product_url}}">Buy now</a>
+        {% include shopify-buy-button.html buy-button-id=page.buy-button-id %}
     </div>
 
     <div class="relative">
