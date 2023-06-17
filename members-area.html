@@ -4,21 +4,23 @@ heading: Members Area
 sub-heading: Welcome to our private members area.
 banner-image: /uploads/travel/blog-1.png
 members-content:
-  - title: Hello I am a title
+  - title: Topic number one
     content_html: >-
       <p><img width="969" src="/uploads/blog-16.png" /></p><h2>Hello I am a big
       heading</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       Et, perferendis? Aspernatur facilis accusamus neque dolorem possimus quasi
       veniam inventore, maiores dignissimos quidem unde aut id rerum culpa quo
-      quibusdam. Similique?</p><p>Lorem ipsum dolor sit, amet consectetur
-      adipisicing elit. Et, perferendis?&nbsp;</p>
-  - title: This is a second title
-    content_html: >-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
-      perferendis? Aspernatur facilis accusamus neque dolorem possimus quasi
-      veniam inventore, maiores dignissimos quidem unde aut id rerum culpa quo
-      quibusdam. Similique?</p>
-  - title: This is a third title
+      quibusdam. Similique? Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Et, perferendis? Aspernatur facilis accusamus neque dolorem possimus
+      quasi veniam inventore, maiores dignissimos quidem unde aut id rerum culpa
+      quo quibusdam. Similique?</p><p>Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Et, perferendis? Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Et, perferendis? Aspernatur facilis accusamus neque
+      dolorem possimus quasi veniam inventore, maiores dignissimos quidem unde
+      aut id rerum culpa quo quibusdam. Similique?</p>
+  - title: Topic number two
+    content_html: "<h2>Lorem ipsum dolor sit, amet consectetur adipisicing</h2><p>\_</p><p><img src=\"/uploads/blog-17.png\" width=\"969\" /></p>"
+  - title: Topic number three
     content_html: >-
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
       perferendis? Aspernatur facilis accusamus neque dolorem possimus quasi
@@ -35,7 +37,7 @@ members-content:
         </div> 
     </section> 
 
-<section class="min-h-80 pl-5p grid grid-cols-4">
+<section class="min-h-80 px-5p grid grid-cols-4">
 
     <div class="col-span-1 border-r-2 border-black">
         <h2 class="block uppercase font-serif text-2xl mt-8 mb-4 tracking-widest">Explore</h2> 
@@ -48,7 +50,7 @@ members-content:
     <div class="col-span-3">
 
         {% for item in page.members-content %}
-        <div id="{{item.title | slugify}}" class="members-content p-5p border-b-2 last:border-b-0 border-black"> 
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black"> 
             {{ item.content_html }}
         </div>
 
