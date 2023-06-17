@@ -6,8 +6,7 @@ banner-image: /uploads/travel/blog-1.png
 members-content:
   - title: Hello I am a title
     content_html: >-
-      <p><img src="/uploads/blog-15.png" width="969" /><img
-      src="/uploads/blog-16.png" width="969" /></p><h2>Hello I am a big
+      <p><img width="969" src="/uploads/blog-16.png" /></p><h2>Hello I am a big
       heading</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       Et, perferendis? Aspernatur facilis accusamus neque dolorem possimus quasi
       veniam inventore, maiores dignissimos quidem unde aut id rerum culpa quo
@@ -46,7 +45,7 @@ members-content:
 
     </div> 
 
-    <div class="col-span-3 members-content">
+    <div class="col-span-3">
 
         {% for item in page.members-content %}
         <div id="{{item.title | slugify}}" class="p-5p border-b-2"> 
