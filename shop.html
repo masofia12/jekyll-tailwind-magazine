@@ -1,7 +1,83 @@
 ---
 layout: default
+title: Blog Page
+background-position: bg-center
+text-position: items-center
+banner-height: min-h-80
+text-color: text-white
+banner-image: /uploads/travel/blog-17.png
+banner-image-alt: a pretty picture
+banner-style: full
+small-top-text: shop our
+heading: Curated Collection.
+heading-text-size: text-9xl
+sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
+seo:
+  title:
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
 ---
-<section class="p-8 max-w-screen-xl mx-auto">
+
+<!-------------------------- Banner --------------------------------------------->
+
+{% include banner.html %}
+
+<!------------------------ Ebooks ------------------------>
+<section class="p-5p">
+    
+    <h2 class="text-center pb-5p font-serif  tracking-widest text-4xl">Travel Guides</h2>
+    
+    <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
+
+        {% assign featured_product-ebooks = site.products-guides | where: 'featured', true %}
+        {% for post in featured_product-ebooks limit: 3 %}
+
+        <div>
+
+            {% include product-loop-item.html %} </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-------------------------- Small Banner --------------------------------------------->
+
+<section class="bg-cover top-0 w-full flex justify-start items-end relative" style="min-height: calc(100vh - 100px);">
+	
+	<img class="absolute h-full object-cover -z-10 w-full" src="/uploads/travel/blog-6.png" alt="{{page.banner-image-alt}}" >
+	
+	<div class="mr-[50%]"> 
+		<h2 class="pt-20p p-10p font-serif text-5xl mb-2 text-white"> "Once you get a taste for travel, wou'll never be the same." </h2> 
+		
+	</div> 
+
+</section> 
+<!------------------------ Presets ------------------------>
+<section class="p-5p">
+    
+    <h2 class="text-center pb-5p font-serif  tracking-widest text-4xl">Lightroom Presets</h2>
+    
+    <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-3">
+
+        {% assign featured_products-presets = site.products-presets | where: 'featured', true %}
+        {% for post in featured_products-presets limit: 3 %}
+
+        <div>
+
+            {% include product-loop-item.html %} </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+{% comment %}
+<!-- <section class="p-8 max-w-screen-xl mx-auto">
 
 	<h2> Shop all presets </h2> 
 	
@@ -20,9 +96,10 @@ layout: default
 	
 	</div>
 	
-</section>
+</section> -->
 
-<section class="p-8 max-w-screen-xl mx-auto">
+
+<!-- <section class="p-8 max-w-screen-xl mx-auto">
 
 	<h2> Shop all presets </h2> 
 	
@@ -41,7 +118,7 @@ layout: default
 	
 	</div>
 	
-</section>
+</section> -->
 <!-- <section class="p-5p">
 
     <div class="max-w-screen-xl mx-auto">
@@ -62,3 +139,5 @@ layout: default
     </div>
 
 </section>  -->
+
+{% endcomment %}

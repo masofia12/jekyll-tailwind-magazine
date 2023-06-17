@@ -5,7 +5,9 @@ subtitle: A short product subtitle
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore?
 product_url: www.google.com
 featured: true
+new: true
 featured-image: /uploads/travel/blog-5.png
+related-image: /uploads/travel/blog-4.png
 featured-image-alt: before and after product name preset
 product-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid.
 price: $37
@@ -17,7 +19,6 @@ gallery-images:
   - /uploads/travel/blog-5.png
   - /uploads/travel/blog-4.png
   - /uploads/travel/blog-3.png
-
 faqs:
   - question: Frequently asked question 1
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore? 

@@ -2,7 +2,10 @@
 
 <a class="break-inside-avoid block mb-4" href="{{ post.url }}">
     <div class="bg-cover pb-[24vw] relative">
-        <img src="{{ post.featured-image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+        <img src="{{ post.related-image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+        {% if post.new == true %}
+        <span class="uppercase bg-black px-4 py-2 text-white z-10 absolute right-2 top-2">New</span>
+        {% endif %}
   </div>
     <div class="p-4 relative">
         <p>

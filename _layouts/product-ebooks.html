@@ -38,8 +38,20 @@ layout: default
 </section>-->
 {% endcomment %}
 
+<section class="p-5p">
+    <h2 class="bg-feature relative font-serif tracking-widest text-center uppercase text-4xl my-6">What's inside</h2>
+    <div class="max-w-screen-lg mx-auto">
 
-<section class="p-5p"> 
+            {% include thumbnail-gallery.html %}
+
+        </div>
+
+    </div>
+</section>
+
+
+{% comment %}
+<!-- <section class="p-5p"> 
 <div class="max-w-screen-xl mx-auto">
     <div>
         <h2 class="bg-feature relative font-serif tracking-widest text-center uppercase text-4xl my-6">What's inside</h2>
@@ -57,22 +69,37 @@ layout: default
         </div>
     </div>
 </div>
-</section>
+</section> -->
+{% endcomment %}
+
 
 <!------------------------------------- contents + whats included --------------------------->
 
-<section class="py-5p">
+<section class="pt-5p pb-10p">
     
     
    
-    <div class="grid grid-cols-5 px-5p items-center">
-        
-        <h2 class="col-span-3 block bg-feature relative px-5p self-center uppercase font-serif tracking-widest text-4xl">Table of contents</h2>
+    <div class="grid grid-cols-5 px-5p items-start">
+        <div class="col-span-3 border-b-2 border-black">
+            <h2 class="block bg-feature relative mb-6 uppercase font-serif tracking-widest text-4xl">Table of contents</h2>
+            {% for item in page.destinations limit: 4 %}
     
-        <div class="col-span-2 pb-10p pl-10p row-span-2">
+            <div class="py-8 flex justify-between border-black border-t-2">
+                <span class="">
+                    {{ item.location }}
+                </span>
+                    
+                <span class="text-right">
+                    {{ item.pages }}
+                </span>
+            </div>
+            {% endfor %}
+    
+    </div>  
+        <div class="col-span-2 pb-10p pl-10p">
             
             <h2 class="bg-feature relative font-serif tracking-widest text-4xl mb-6 uppercase">What's included</h2>
-            <ul class="font-sans my-4 list-disc list-inside">
+            <ul class="font-sans my-4 list-disc list-inside leading-6">
                 <li>Magni facere tenetur veniam itaque</li>
                 <li>Lorem itaque tenetur?</li>
                 <li>Debitis soluta consequatur</li>
@@ -85,28 +112,14 @@ layout: default
             </ul>
             <div class="flex items-center">
                 <a class="uppercase button mt-2 inline-block" href="{{page.product_url}}">Add to cart</a>
-                <span class="mt-2 inline-block pl-5p"> Add to wishlist </span>
+                <span class="mt-2 inline-block pl-5p"> &#9825; Add to wishlist </span>
             
             </div>
         </div>
 
-        <div class="col-span-3 px-5p relative [&>*:last-child]:border-b-2">
+       
             
-                {% for item in page.destinations limit: 4 %}
-    
-                <div class="py-8 flex justify-between border-black border-t-2">
-                    <span class="">
-                        {{ item.location }}
-                    </span>
-                        
-                    <span class="text-right">
-                        {{ item.pages }}
-                    </span>
-                </div>
-        
-                {% endfor %}
-        
-        </div>  
+                
     
     </div>
 
