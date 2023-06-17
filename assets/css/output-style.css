@@ -526,6 +526,10 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -565,14 +569,14 @@ video {
 .mt-1 {
   margin-top: 0.25rem;
 }
-.mt-10p {
-  margin-top: 10%;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .line-clamp-2 {
   overflow: hidden;
