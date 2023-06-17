@@ -31,7 +31,7 @@ members-content:
 <section class="p-5p bg-cover flex justify-start relative text-white" style="min-height: 40vh ;">
     <img src="{{page.banner-image}}" alt="{{page.banner-image-alt}}" class="absolute h-full top-0 w-full object-cover -z-10 left-0" />
 
-        <div class="pl-[50%] text-left"> 
+        <div class="text-left"> 
            <h2 class="pb-4 font-serif text-8xl mb-2"> Members Area </h2> 
            <h3 class="text-2xl font-sans"> Welcome to our private members area. </h3> 
         </div> 
@@ -50,7 +50,7 @@ members-content:
     <div class="col-span-3 members-content">
 
         {% for item in page.members-content %}
-        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black"> 
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black last:border-b-0"> 
             {{ item.content_html }}
         </div>
 
