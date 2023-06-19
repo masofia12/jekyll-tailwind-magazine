@@ -6,6 +6,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo
 product_url: www.google.com
 featured: true
 buy-button-id: 7710820696242
+type: preset
 featured-image: /uploads/travel/blog-7.png
 related-image: /uploads/travel/blog-7.png
 hover-image: /uploads/travel/blog-26.png

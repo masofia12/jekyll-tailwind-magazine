@@ -526,6 +526,10 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -738,6 +742,9 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.rounded-xl {
+  border-radius: 0.75rem;
+}
 .border {
   border-width: 1px;
 }
@@ -791,10 +798,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-zinc-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
-}
 .bg-zinc-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -807,14 +810,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
+.bg-\[url\(\'\/uploads\/travel\/blog-26\.png\'\)\] {
+  background-image: url('/uploads/travel/blog-26.png');
 }
 .bg-\[url\(\'\/uploads\/travel\/blog-5\.png\'\)\] {
   background-image: url('/uploads/travel/blog-5.png');
-}
-.bg-\[url\(\'\/uploads\/travel\/blog-26\.png\'\)\] {
-  background-image: url('/uploads/travel/blog-26.png');
 }
 .bg-\[length\:55vw\] {
   background-size: 55vw;
@@ -906,6 +906,9 @@ video {
 }
 .pb-1\/1 {
   padding-bottom: 100%;
+}
+.pb-1\/2 {
+  padding-bottom: 50%;
 }
 .pb-10p {
   padding-bottom: 10%;
@@ -1045,6 +1048,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
 }
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1116,8 +1122,18 @@ margin-bottom: 2rem;
     letter-spacing: 0.2rem;
 }
 
+.filter .active {
+    background-color:#1E1E1E;
+    color: #d4d1cd;
+}
+
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
+}
+
+.hover\:bg-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-zinc-100:hover {
@@ -1125,14 +1141,14 @@ margin-bottom: 2rem;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-zinc-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
-}
-
 .hover\:text-rose-500:hover {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-0:hover {

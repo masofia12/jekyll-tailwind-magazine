@@ -58,3 +58,8 @@ margin-bottom: 2rem;
     font-family: 'Italiana', 'serif';
     letter-spacing: 0.2rem;
 }
+
+.filter .active {
+    background-color:#1E1E1E;
+    color: #d4d1cd;
+}

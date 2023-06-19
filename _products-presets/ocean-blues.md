@@ -3,6 +3,7 @@ layout: product-presets
 title: Ocean Blues
 subtitle: A short product subtitle
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo. Optio blanditiis similique recusandae obcaecati aliquid, quis perferendis sequi ratione provident tempora maxime consequuntur possimus commodi a! Ipsam, quae dolore?
+type: preset
 product_url: www.google.com
 price: $37
 url: www.google.com

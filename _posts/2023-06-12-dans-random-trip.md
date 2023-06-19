@@ -9,7 +9,7 @@ featured: true
 categories:
   - travel
   - life
-featured_image: /uploads/travel/travel-1.jpg
+featured_image: /uploads/travel/travel-5.jpg
 aspect-ratio: aspect-square
 page_blocks:
   - _id: banner

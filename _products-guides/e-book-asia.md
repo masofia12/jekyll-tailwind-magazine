@@ -6,6 +6,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo
 product_url: www.google.com
 featured: true
 new: true
+type: travel guide
 featured-image: /uploads/travel/blog-5.png
 related-image: /uploads/travel/blog-4.png
 hover-image: /uploads/travel/blog-5.png
