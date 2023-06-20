@@ -42,9 +42,9 @@ destinations:
     </div>
     </div>
     <div class="col-span-3 self-center p-10p">
-        <div class="bg-featured relative right-[25vw] p-4"><h2 class="font-serif text-center text-6xl">A facinating <br>heading about <br>the site.</h2></div>
-        <p class="font-sans py-10p pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas facere ab fugiat ipsa nulla, eius fugit dolorem impedit repellat quo iusto quis optio quasi ducimus nam necessitatibus velit? Necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptas exercitationem nam cupiditate pariatur nobis quam ex dolores provident vero qui eius rem quas eligendi optio, non aperiam! Rerum.</p>
-        <div class="mt-2 mb-14"><a class="font-sans border-b border-black uppercase text-xl" href="/about.html">Read more</a></div>
+        <div class="bg-featured relative right-[25vw] p-4"><h2 class="font-serif text-center text-6xl editable">A facinating <br>heading about <br>the site.</h2></div>
+        <div class=" font-sans py-10p pr-20"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas facere ab fugiat ipsa nulla, eius fugit dolorem impedit repellat quo iusto quis optio quasi ducimus nam necessitatibus velit? Necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptas exercitationem nam cupiditate pariatur nobis quam ex dolores provident vero qui eius rem quas eligendi optio, non aperiam! Rerum.</p></div>
+        <div class="mt-2 mb-14"><a class="editable font-sans border-b border-black uppercase text-xl" href="/about.html">Read more</a></div>
     </div>
 </section>
 
@@ -53,7 +53,7 @@ destinations:
 <section class="py-5p">
     
     <div class="bg-feature relative p-4 self-center uppercase font-serif tracking-widest text-center text-4xl">
-        <h2>Upcoming travel destinations</h2>
+        <h2 class="editable">Upcoming travel destinations</h2>
     </div>
    
     <div class="grid grid-cols-5 px-5p items-center">
@@ -80,7 +80,7 @@ destinations:
         <div class="col-span-2 py-10p pl-10p">
             <div class="relative ">
                 <img src="/uploads/travel/blog-23.png" class="object-cover object-center inset-0 h-full w-full editable" alt="about the company">
-                <span class="absolute bottom-10p bg-featured text-4xl py-5p px-10p tracking-wide font-serif">Currently in...</span>
+                <span class="editable absolute bottom-10p bg-featured text-4xl py-5p px-10p tracking-wide font-serif">Currently in...</span>
             </div>
         </div>
     
@@ -92,7 +92,7 @@ destinations:
 {{site.data.site-settings.global-cta-options}}
 <!------------------------ Featured blog loop forced aspect ratio ------------------------>
     <section class="p-5p bg-light">
-        <h2 class="uppercase text-center pb-5p font-serif  tracking-widest text-4xl">Recently on the blog...</h2>
+        <h2 class="uppercase text-center pb-5p font-serif editable tracking-widest text-4xl">Recently on the blog...</h2>
         <div class="max-w-screen-xl mx-auto grid gap-4 md:grid-cols-7">
     
             {% assign featured_posts = site.posts | where: 'featured', true %}
