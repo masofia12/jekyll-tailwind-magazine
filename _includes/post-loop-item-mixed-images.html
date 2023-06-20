@@ -9,7 +9,7 @@
         
         <h2 class="mt-1 font-serif texxt-bold text-3xl"> {{ post.title }} </h2>
         <p class="mt-2 py-5p text-xl font-sans"> {{ post.description }} </p>
-        <span class="mt-2 font-serif text-xl uppercase border-black border-b" href="{{ post.url }}">Read more</span>
+        <span class="mt-2 font-serif text-xl uppercase border-black border-b editable" href="{{ post.url }}">Read more</span>
         <p> 
         {% for item in post.categories %}
             <span class="tag mr-2 pt-20p font-sans"> {{item}} </span>

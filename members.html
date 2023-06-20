@@ -1,16 +1,17 @@
 ---
 layout: default
+featured-image: /uploads/travel/blog-2.png
 ---
 
 <section class="grid grid-cols-2 gap-2 tall-80">
 
     <div class="py-5p px-10p" style="width:100%;">
-        <h2 class="font-serif text-4xl pt-15p">Login or sign up</h2>
-        <p class="font-sans uppercase text-lg py-5p">Come join our fun members page with your member details or sign up to our page to get exclusive access to new items in our online store</p>
+        <h2 class="font-serif text-4xl pt-15p editable">Login or sign up</h2>
+        <div class="editable"><p class="font-sans uppercase text-lg py-5p">Come join our fun members page with your member details or sign up to our page to get exclusive access to new items in our online store</p></div>
         <iframe src="https://fair-sandpaper.cloudvent.net?msopen=/member/sign_in" width="100%" height="500" frameborder="0" seamless="true"></iframe>
     </div>
     
-    <div class="bg-image bg-cover" style="background-image: url('/uploads/travel/blog-2.png');"></div>
+    <div class="bg-image bg-cover" style="background-image: url('{{ page.featured-image }}');"></div>
 
 </section>
 

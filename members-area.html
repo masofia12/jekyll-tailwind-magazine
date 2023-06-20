@@ -32,15 +32,15 @@ members-content:
     <img src="{{page.banner-image}}" alt="{{page.banner-image-alt}}" class="absolute h-full top-0 w-full object-cover -z-10 left-0" />
 
         <div class="text-left"> 
-           <h2 class="pb-4 font-serif text-8xl mb-2"> Members Area </h2> 
-           <h3 class="text-2xl font-sans"> Welcome to our private members area. </h3> 
+           <h2 class="pb-4 font-serif text-8xl mb-2 editable"> Members Area </h2> 
+           <h3 class="text-2xl font-sans editable"> Welcome to our private members area. </h3> 
         </div> 
     </section> 
 
 <section class="min-h-80 px-5p grid grid-cols-4">
 
     <div class="col-span-1 border-r-2 border-black">
-        <h2 class="block uppercase font-serif text-2xl mt-8 mb-4 tracking-widest">Explore</h2> 
+        <h2 class="block uppercase font-serif text-2xl mt-8 mb-4 tracking-widest editable">Explore</h2> 
             {% for item in page.members-content %}
             <a href="#{{item.title | slugify }}" class="block"> {{item.title}}</a>
             {% endfor %}

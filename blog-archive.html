@@ -27,8 +27,8 @@ title: Blog Archive
 
 <section class="py-5p archive" x-data="{ search: '', posts: [...document.querySelectorAll('.post')] }" x-on:input="filterPosts">
     <div class="max-w-screen-lg mx-auto p-2 center mb-8 text-center">
-        <h2 class="font-serif text-4xl mb-2 uppercase"> Explore the blog </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+        <h2 class="font-serif text-4xl mb-2 uppercase editable"> Explore the blog </h2>
+        <div class="editable"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p></div>
    
         <div class="filter relative my-8 inline-block"> 
             <input class="bg-light p-5p rounded-xl" type="text" x-model="search" placeholder="Search..." class="p-4">
