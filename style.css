@@ -24,6 +24,10 @@
 }
 
 /* ----------- CUSTOM STYLES --------- */
+html{
+    @apply sm:border-blue md:border-purple lg:border-teal border-8;
+}
+
 
 .button {
     @apply p-4 uppercase text-white bg-black tracking-widest;

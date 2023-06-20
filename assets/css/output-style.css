@@ -1077,6 +1077,28 @@ video {
 }
 
 /* ----------- CUSTOM STYLES --------- */
+html {
+  border-width: 8px;
+}
+@media (min-width: 640px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 255 / var(--tw-border-opacity));
+  }
+}
+@media (min-width: 768px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(160 32 240 / var(--tw-border-opacity));
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 128 128 / var(--tw-border-opacity));
+  }
+}
+
 
 .button {
   --tw-bg-opacity: 1;
@@ -1202,6 +1224,9 @@ margin-bottom: 2rem;
   }
   .md\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .md\:flex-wrap {
     flex-wrap: wrap;
